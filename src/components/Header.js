@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SearchIcon from "@material-ui/icons/Search";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Header() {
   return (
     <nav className="header">
-      <Link to="/">
+      <Link className="header__logo" to="/">
         <img
-          className="header__logo"
+          className="header__logo-img"
           src="../../public/images/logo.png"
           alt="Logo Clothing Store"
         />
@@ -15,7 +15,7 @@ function Header() {
 
       <div className="header__search">
         <input type="text" className="header__searchInput" />
-        <SearchIcon className="header__searchIcon" />
+        <FontAwesomeIcon className="fa-search" icon="search" />
       </div>
 
       <div className="header__nav">
@@ -32,9 +32,8 @@ function Header() {
         </Link>
 
         <Link to="/checkout" className="header__link">
-          <div className="header__optionBasket">
-            <span>Cart</span>
-            <span>0</span>
+          <div className="header__option">
+            <FontAwesomeIcon icon="shopping-cart" />
           </div>
         </Link>
       </div>
