@@ -1,0 +1,10 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: [s] 20rem [banner-s] 1fr [banner-e] 10rem [e];
+
+  &__image {
+    grid-column: banner-s/banner-s;
+  }
+}

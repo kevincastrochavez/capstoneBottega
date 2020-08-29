@@ -8,7 +8,7 @@ function Header() {
       <Link className="header__logo" to="/">
         <img
           className="header__logo-img"
-          src="../../public/images/logo.png"
+          src="http://via.placeholder.com/200x150"
           alt="Logo Clothing Store"
         />
       </Link>
