@@ -2,16 +2,25 @@
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-columns: [s] 20rem [banner-s] 1fr [banner-e] 10rem [e];
-  grid-template-rows: [s banner-s] 20rem [banner-e product-s] 28rem [product-e e];
+  grid-template-columns: [s] 20rem [banner-s] 110rem [banner-e] 10rem [e];
+  grid-template-rows: [s banner-s] 20rem [banner-e product-s] 1fr [product-e e];
 
   &__image {
     grid-column: banner-s/banner-s;
   }
 
+  &__category-bar {
+    grid-column: s/banner-s;
+    grid-row: banner-s/e;
+    width: 20rem;
+    height: 53rem;
+    background-color: blue;
+  }
+
   &__products {
     grid-column: banner-s/banner-e;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
 }
